@@ -48,3 +48,7 @@ https://www.javainuse.com/pcf/pcf-rabbitmq
 Link follow for service registry
 https://www.youtube.com/watch?v=-1vRg22chr0
 
+Link follow for service registry and zenkins
+https://www.youtube.com/watch?v=1fPTOhn8fgk
+
+see the groovy script
