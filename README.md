@@ -1,15 +1,15 @@
 # PCF
 
-Terminal Command
-Goto the project folder from terminal
-cf login
-Put this
-    https://api.run.pivotal.io
-Give email Id:sunenagwachha@gmail.com
-and password:Ss--!
-cf push test-environment –-random-route -p target\employee-producer-0.0.1-SNAPSHOT.jar
-Create  file manifest.yaml manual in project or through command
-And just need to do cf push next time
+    Terminal Command
+    Goto the project folder from terminal
+    cf login
+    Put this
+        https://api.run.pivotal.io
+    Give email Id:sunenagwachha@gmail.com
+    and password:Ss--!
+    cf push test-environment –-random-route -p target\employee-producer-0.0.1-SNAPSHOT.jar
+    Create  file manifest.yaml manual in project or through command
+    And just need to do cf push next time
 
 
 Security dependency chahin6 ani yo cofig file banawunu par6
