@@ -1,0 +1,22 @@
+node{
+    
+    stage('Clone From Repo'){
+     git credentialsId: 'githubuserpass', url: 'https://github.com/sureshprajapati076/pcf-student-service'
+                                                                                          
+    }
+    
+      stage('Mvn package'){
+        def mvnHome = tool name: 'maven', type: 'maven'
+        sh label: '', script: "${mvnHome}/bin/mvn clean package -DskipTests"
+    }
+     stage('Deploy / Update Environment'){
+     withCredentials([usernamePassword(credentialsId: 'pcf', passwordVariable: 'passid', usernameVariable: 'userid')]) {
+        
+         sh label: '', script: '/usr/local/bin/cf login -a http://api.run.pivotal.io -u $userid -p $passid'
+         sh label: '', script: '/usr/local/bin/cf push'
+}
+
+
+      }
+    
+}
