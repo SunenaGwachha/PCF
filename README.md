@@ -1,4 +1,23 @@
 # PCF
+
+Security dependency chahin6 ani yo cofig file banawunu par6
+
+package com.example.student.config;
+
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+
+@EnableWebSecurity
+public class Config extends WebSecurityConfigurerAdapter{
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http.authorizeRequests().anyRequest().permitAll();
+    }
+}
+
+
 Inside pom.xml choose this range 2.--3.0 range spring version otherwise it doesnot support Pcf service discovery go to https://start.spring.io/ get correct dependency from there
 
 
