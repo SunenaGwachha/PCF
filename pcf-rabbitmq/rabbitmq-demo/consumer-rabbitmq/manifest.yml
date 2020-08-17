@@ -1,0 +1,8 @@
+applications:
+  - name: consumer-service
+    disk_quota: 1G
+    instances: 1
+    memory: 1G
+    path: target/consumer-0.0.1-SNAPSHOT.jar
+    services:
+      - rabbitmq

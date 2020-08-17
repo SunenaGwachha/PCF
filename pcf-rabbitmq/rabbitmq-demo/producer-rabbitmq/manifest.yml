@@ -1,0 +1,8 @@
+applications:
+  - name: producer-service
+    disk_quota: 1G
+    instances: 1
+    memory: 1G
+    path: target/producer-0.0.1-SNAPSHOT.jar
+    services:
+      - rabbitmq
