@@ -12,7 +12,24 @@
     And just need to do cf push next time
 
 
-Security dependency chahin6 ani yo cofig file banawunu par6
+Security, web , acutator dependency chahin6 ani yo cofig file banawunu par6
+
+<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.pivotal.spring.cloud</groupId>
+            <artifactId>spring-cloud-services-starter-service-registry</artifactId>
+        </dependency>
 
 package com.example.student.config;
 
@@ -21,13 +38,13 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 
-@EnableWebSecurity
-public class Config extends WebSecurityConfigurerAdapter{
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().anyRequest().permitAll();
+    @EnableWebSecurity
+    public class Config extends WebSecurityConfigurerAdapter{
+        @Override
+        protected void configure(HttpSecurity http) throws Exception {
+            http.authorizeRequests().anyRequest().permitAll();
+        }
     }
-}
 
 
 Inside pom.xml choose this range 2.--3.0 range spring version otherwise it doesnot support Pcf service discovery go to https://start.spring.io/ get correct dependency from there
