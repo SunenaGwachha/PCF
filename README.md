@@ -47,6 +47,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
     }
 
 
+
 Inside pom.xml choose this range 2.--3.0 range spring version otherwise it doesnot support Pcf service discovery go to https://start.spring.io/ get correct dependency from there
 
 
