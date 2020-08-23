@@ -14,6 +14,7 @@
 
 Security, web , acutator dependency chahin6 ani yo cofig file banawunu par6
 
+
 <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
