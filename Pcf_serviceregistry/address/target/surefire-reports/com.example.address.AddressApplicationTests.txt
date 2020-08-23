@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.example.address.AddressApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.142 s - in com.example.address.AddressApplicationTests
